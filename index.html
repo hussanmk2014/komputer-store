@@ -1,34 +1,73 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <title>Komputer Store</title>
-    <script src="app.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <span id="logo">Komputer Store</span>
-        </div>
-    </header>
-    <main>
+<header>
+    <div class="container">
+        <span id="theLogo">Komputer Store</span>
+    </div>
+</header>
+<main>
+    <div class="container">
         <div class="sub-container">
             <section id="bank">
-                <h2>Joe Banker</h2>
-                <div class="row">
+                <h3>Joe Banker</h3>
+                <div class="bankRow">
                     <p>Balance</p>
-                    <p id="bank-balance"></p>
+                    <p id="bankBalance"></p>
                 </div>
-                <div class="hidden row">
-                    <p> the outstanding Loan</p>
+                <div id="bankLoan" class="loanRow hide">
+                    <p>Loan to pay</p>
+                    <p id="loanBalance"></p>
                 </div>
-                <div class="loan-Botton row">
-                    <a class ="loan-Botton" href="#" id ="loan">Get a loan</a>
+                <div class="buttonsRow">
+                    <a href="#" id="loan" class="button">Get a loan</a>
                 </div>
             </section>
+            <section id="work">
+                <h3>Work</h3>
+                <div class="workRow">
+                    <p>Pay</p>
+                    <p id="salaryBalance"></p>
+                </div>
+                <div class="buttonsRow">
+                    <a href="#" id="bankTransfer" class="button">Bank</a>
+                    <a href="#" id="getSalary" class="button">Work</a>
+                </div>
+                <div id="repay-loan-button" class="repayRow hide">
+                    <a href="#" id="repayLoan" class="button">Repay loan</a>
+                </div>
+            </section>
+            <section id="laptops">
+                <label for="laptops-selection">Laptops</label>
+                <fieldset>
+                    <select name="" id="laptops-selection"></select>
+                </fieldset>
+                <p>Features:</p>
+                <ul id="laptops-specs"></ul>
+            </section>
         </div>
-    </main>
-    
+        <section id="laptopsInfo">
+            <div id="laptopsInfo-image">
+                <img src="" alt="Laptop photo">
+            </div>
+            <div id="laptopsInfo-description">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div id="laptopsInfo-buy">
+                <span id="laptopsInfo-price"></span>
+                <a href="#" id="laptopsInfo-buyButton" class="button">BUY NOW</a>
+            </div>
+        </section>
+    </div>
+</main>
 </body>
 </html>

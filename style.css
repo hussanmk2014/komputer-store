@@ -1,0 +1,171 @@
+header {
+    background-color: #21025a;
+    text-align: center;
+    padding: 21px;
+  }
+
+  #theLogo {
+    color: rgb(218, 205, 205);
+    font-size: 4rem;
+}
+.sub-container  {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  section {
+    background-color: #f2f2f2;
+    border: 2px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+  #bank, #work, #laptops {  
+    display: flex;  
+    flex-flow: column nowrap;
+    width: 24%;
+    min-width: 255px;
+}
+#bank h3, #work h3, #laptops label {
+    font-size: 2rem;
+}
+
+.bankRow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.workRow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1rem ;
+}    
+
+.loanRow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.buttonsRow {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: auto;
+    justify-content: space-between;
+}
+
+.repayRow {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: auto;
+    justify-content: space-between;
+}
+.button {
+    text-align: center;
+    text-decoration: none;
+    padding: 0.6rem 1.1rem;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: rgb(14, 13, 13);
+    margin: 0.4rem;
+}
+
+
+#loan {
+    background-color: #34d6ae;
+    flex: 1;
+}
+
+#loan:hover {
+    background: #2B2D42;
+    color: #39be9d;
+}
+
+#bankTransfer {
+    background-color: #eede2c;
+    min-width: 30%;
+}
+
+#bankTransfer:hover {
+    background: #2B2D42;
+    color: #f5e42c;
+}
+
+#getSalary:hover {
+    background: #509650;
+    color: #d86161;
+}
+
+#getSalary {
+    background: #212fc5;
+    color: #ecdc2b;
+    min-width: 30%;
+}
+
+#repayLoan {
+
+    background-color: #d15959;
+    flex: 1;
+}
+
+#repayLoan:hover {
+    background: #343650;
+    color: #dd6161;
+}
+#laptopsInfo-buyButton {
+    background-color: #3972dd;
+
+}
+
+#laptopsInfo-buyButton:hover {
+    background: #25273a;
+    color: #dd6464;
+}
+.hide {
+    display: none;
+}
+
+#laptopsInfo {
+    display: flex;  
+    flex-flow: row nowrap;
+}
+
+#laptopsInfo-image, #laptopsInfo-description, #laptopsInfo-buy {
+    display: flex;
+    flex-flow: column;
+}
+#laptopsInfo-image, #laptopsInfo-buy {
+    text-align: center;
+    line-height: 1.2;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    flex: 1;
+}
+
+#laptopsInfo img {
+    width: 13rem;
+    height: 13rem;
+}
+
+#laptopsInfo-buy span{
+    text-align: center;
+    font-weight: 580;
+    font-size: 3rem;
+}
+
+#laptopsInfo-description h1 {
+    font-size: 3rem;
+}
+
+#laptopsInfo-description p {
+    font-size: 1.9rem;
+}
