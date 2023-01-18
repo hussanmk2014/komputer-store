@@ -28,7 +28,6 @@ let bankBalance = 0;
 let salaryBalance = 0;
 let monthSalary = 100;
 let loan = 0;
-const loanRatePercent = 0.1;
 let availableLoanAmount = 0;
 const currencySign = "kr";
 let laptops = [];
@@ -49,7 +48,7 @@ function transferToBank() {
     }
     let bankMoneyPart = salaryBalance;
     if (loan>0) {
-        const loanPaymentPart = salaryBalance * loanRatePercent;
+        const loanPaymentPart = salaryBalance * 0.1;
        
 
         loan -= loanPaymentPart;
@@ -130,7 +129,6 @@ function onGetLoanClick() {
     uppdateLoanInfo();
     uppdateBankBalance();
     uppdateLoanToPayBalance();
- 
 }
 
 
